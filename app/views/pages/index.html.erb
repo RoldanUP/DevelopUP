@@ -1,0 +1,113 @@
+<html>
+
+<body>
+
+    <section style= "background-image:url(<%= asset_path("1back.jpg") %>)">
+
+        <div class="row"style=>
+            <div class="jumbotron foo "  style= "background-image:url(<%= asset_path("jumbo2.png") %>);padding-left: 150px;height: 396px;margin-bottom: 0px;">
+
+
+
+
+
+                <h2 style="margin-top: 70px;">
+                <span style="color: #ffffff;">
+                    Tu web en todos los dispositivos, ignorar a los <br>
+                    usuarios que navegan con móvil ya no es una opción, <br>estas perdiendo ventas y clientes.</span></h2> 
+
+                <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p></div>
+
+            </div>  
+<!--<div class="box "  style="background-color:rgba(0, 0, 0, 0.49); padding:10px 10px 15px 10px; height: 275px;width: 780px ; border:2px solid; border-radius:25px;" ; width:= "620px"   height:= "325px"> 
+</div>  BOX DE-->
+
+
+
+
+
+
+
+<div class="row">
+
+    <div class="col-lg-4 ; center-block" >
+
+        <center> <%= image_tag("1.png", :style => " width: 400px; margin-top:100px;        ;centrar")%> </center>
+
+    </div>
+
+    <div class="col-lg-8" style="margin-top: 35px ; right: 10px;" >
+        <h1 class="text-center"  style= "margin-top:30px ; color: #ffffff">Que hacemos?</h1> 
+
+        <h3 style= "font-family: 'Droid Sans', sans-serif; margin-top: 60px;  color: #ffffff " class="text-center">Nos encargamos de evaluar y proponer lo que tu marca requiere en cuanto a su presencia web, a través de un diseño web atractivo y profesional que comunique efectivamente. Nuestras soluciones tienen por objetivo realizar un diseño web impactante y competitivo.</h3>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="margin-bottom: 120px;">>
+
+    <div class="col-lg-4">
+
+
+
+        <center class="center-block"> <%= image_tag("flechaslargas.png", :style => " width: 400px; margin-top:85px;centrar")%> </center>
+
+    </div>
+
+    <div class="col-lg-8" style="margin-top: 30px ; right: 10px;" >
+
+
+
+        <h2 style= "font-family: 'Droid Sans', sans-serif;  color: #ffffff;  margin-top:75px " class="text-center">
+
+            <br>Nosotros somos emprendedores al igual que tú, y sabemos lo que es enamorarse de un proyecto.</h2>
+            <br>
+
+        </div>
+    </div>
+    <%= render :partial => 'shared/separadormulti' %>
+    <br>
+    <br>
+
+    <%= render :partial => 'shared/grillas' %>
+
+    <br>       
+    <br> <br>       
+    <br>
+
+    <br>       
+    <br>
+
+    <%= render :partial => 'shared/slider' %>
+
+
+    <footer class="foo" style="background-image:url(<%= asset_path("separador.jpg") %>) ; margin-top:50px;padding-top:20px">
+        <div class=" container" style="padding-bottom: 20px";>
+            <div class="pull-left">
+                <h4 style="color: #ffffff;">© DevelopUP</h4>
+                <h5 style="color: #ffffff;">Creado en Santiago, Chile</h5>
+                 <h5 style="color: #ffffff;">By Sebastián Roldán</h5>
+                <a href="https://www.facebook.com/DesignUPChile?fref=ts"><p style="color: #ffffff;">DesignUP</p></a>
+            </div>
+            <div class="pull-right">
+                <h4 style="color: #ffffff; margin-left: 35px ; margin-top: 0px">Comparte</h4>
+                <div class="social-share-button" >
+
+
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/pages/Develop-UP/672774092762897?fref=ts" target="_blank" ><%= image_tag("comple1f.png" , :style => "width:150px")%></a>
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+</html>
+

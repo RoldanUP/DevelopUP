@@ -1,0 +1,107 @@
+<style type="text/css">
+    top{
+    	position: relative;
+    	z-index: 2000;
+    }
+
+    a.flecha{
+      max-height: 100vh;
+    }
+
+    .carousel img { 
+      min-width: 100%;
+      min-height: 100%;
+      max-height: none;
+      max-width: 100%;
+    }
+
+    .carousel-caption {
+      position: fixed;
+      float: left;
+      left:5vw;
+    	max-width: 600px;
+    	top: 26vh;
+    	text-align: left;
+    	z-index: 0;
+      text-shadow: rgba(0, 0, 0, 0.8) 0px 2px 3px;
+    }
+    .flecha{
+      position: fixed;
+      min-height: 100%
+    }
+    .glyphicon.flechaicon{
+      position: fixed;
+      top: 40vh;
+      right: 65px;
+    }
+
+    .glyphicon.resize{
+      font-size: 60px;
+    }
+    .adjust{
+      min-height: 100vh;
+      width: auto;
+      min-width: 1200px;
+
+    }
+</style>
+
+<div id="carousel" class="carousel slide adjust top" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+  	<div class="item active">
+  	  	<%= 
+        #!/usr/bin/env ruby
+        # render :partial => "shared/video/video1"
+         %> 
+  	  	<%= image_tag "UPleague.jpg" ,:class =>"adjust" %> <!-- IMAGEN NECESARIA -->
+  		<div class="carousel-caption">
+  		<h3>Celebraciones temáticas en donde podrás compartir con tus personajes preferidos</h3>
+  		</div>
+  	</div>
+  	<div class="item">
+  		<%= image_tag "DevelopUP.jpg" ,:class =>"adjust" %>
+  		<div class="carousel-caption">
+  		<h3>Nuestro profesionalismo y especial dedicación en los detalles nos permiten celebrar un cumpleaños de excelencia</h3>
+  		</div>
+  	</div>
+   	<div class="item">
+  		<%= image_tag "DesingUP.jpg" ,:class =>"adjust" %>
+  		<div class="carousel-caption">
+  		<h3>Un equipo conformado por jóvenes pendientes de cada celebración como especial</h3>
+  		</div>
+  	</div>
+  </div>
+
+
+  <!-- Controls -->
+<!--   <a class="left carousel-control" href="#carousel" data-slide="prev" >
+  	<span class="glyphicon glyphicon-chevron-left"></span>
+  </a> -->
+  <a class="right carousel-control flecha" href="#carousel" data-slide="next"  >
+  	<span class="glyphicon glyphicon-chevron-right resize flechaicon"></span>
+  </a>
+
+</div>
+
+<!-- MOBILE SWIPE & STOP CAROUSEL -->
+<script>
+  $("#carousel").carousel('pause');
+  $(document).ready(function() {  
+  		 $("#carousel").swiperight(function() {  
+    		  $(this).carousel('prev');  
+	    		});  
+		   $("#carousel").swipeleft(function() {  
+		      $(this).carousel('next');  
+	   });  
+	});  
+</script>
+
+
